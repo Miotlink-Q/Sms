@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="SMS"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/color_019BFF"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="发送次数"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="50dp"/>
+            <EditText
+                android:id="@+id/send_count_et"
+                android:layout_marginLeft="10dp"
+                android:hint="输入次数"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="间隔时间（s）"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+        <EditText
+            android:id="@+id/send_time_et"
+            android:layout_marginLeft="10dp"
+            android:hint="输入间隔时间"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="手机号码"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="50dp"/>
+            <EditText
+                android:id="@+id/send_tel_et"
+                android:layout_marginLeft="10dp"
+                android:hint="输入手机号码"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/send_c_et"
+            android:hint="输入编辑短信内容"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <Button
+            android:id="@+id/send_phone_btn"
+            android:text="选择通讯录"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/send_excle_btn"
+            android:text="选择EXCEL"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <Button
+            android:id="@+id/send_btn"
+            android:text="发送"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+</LinearLayout>
